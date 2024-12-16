@@ -31,18 +31,18 @@ namespace SlimUI.ModernMenu{
         [Tooltip("The UI Panel parenting all sub menus")]
         public GameObject mainCanvas;
         [Tooltip("The UI Panel that holds the CONTROLS window tab")]
-       // public GameObject PanelControls;
-        //[Tooltip("The UI Panel that holds the VIDEO window tab")]
-        //public GameObject PanelVideo;
-        //[Tooltip("The UI Panel that holds the GAME window tab")]
-        //public GameObject PanelGame;
-        //[Tooltip("The UI Panel that holds the KEY BINDINGS window tab")]
-       // public GameObject PanelKeyBindings;
-        //[Tooltip("The UI Sub-Panel under KEY BINDINGS for MOVEMENT")]
-       // public GameObject PanelMovement;
-        //[Tooltip("The UI Sub-Panel under KEY BINDINGS for COMBAT")]
-        //public GameObject PanelCombat;
-        //[Tooltip("The UI Sub-Panel under KEY BINDINGS for GENERAL")]
+        public GameObject PanelControls;
+        [Tooltip("The UI Panel that holds the VIDEO window tab")]
+        public GameObject PanelVideo;
+        [Tooltip("The UI Panel that holds the GAME window tab")]
+        public GameObject PanelGame;
+        [Tooltip("The UI Panel that holds the KEY BINDINGS window tab")]
+        public GameObject PanelKeyBindings;
+        [Tooltip("The UI Sub-Panel under KEY BINDINGS for MOVEMENT")]
+        public GameObject PanelMovement;
+        [Tooltip("The UI Sub-Panel under KEY BINDINGS for COMBAT")]
+        public GameObject PanelCombat;
+        [Tooltip("The UI Sub-Panel under KEY BINDINGS for GENERAL")]
         public GameObject PanelGeneral;
         
 
@@ -156,36 +156,36 @@ namespace SlimUI.ModernMenu{
 			CameraObject.SetFloat("Animate",0);
 		}
 
-		//void DisablePanels(){
-			//PanelControls.SetActive(false);
-			//PanelVideo.SetActive(false);
-			//PanelGame.SetActive(false);
-			//PanelKeyBindings.SetActive(false);
+		void DisablePanels(){
+			PanelControls.SetActive(false);
+			PanelVideo.SetActive(false);
+			PanelGame.SetActive(false);
+			PanelKeyBindings.SetActive(false);
 
-			//lineGame.SetActive(false);
-			//lineControls.SetActive(false);
-			//lineVideo.SetActive(false);
-			//lineKeyBindings.SetActive(false);
+			lineGame.SetActive(false);
+			lineControls.SetActive(false);
+			lineVideo.SetActive(false);
+			lineKeyBindings.SetActive(false);
 
-			//PanelMovement.SetActive(false);
-			//lineMovement.SetActive(false);
-			//PanelCombat.SetActive(false);
-			//lineCombat.SetActive(false);
-			//PanelGeneral.SetActive(false);
-			//lineGeneral.SetActive(false);
-		//}
+			PanelMovement.SetActive(false);
+			lineMovement.SetActive(false);
+			PanelCombat.SetActive(false);
+			lineCombat.SetActive(false);
+			PanelGeneral.SetActive(false);
+			lineGeneral.SetActive(false);
+		}
 
-		//public void GamePanel(){
-			//DisablePanels();
-			//PanelGame.SetActive(true);
-			//lineGame.SetActive(true);
-		//}
+		public void GamePanel(){
+			DisablePanels();
+			PanelGame.SetActive(true);
+			lineGame.SetActive(true);
+		}
 
-		//public void VideoPanel(){
-			//DisablePanels();
-			//PanelVideo.SetActive(true);
-			//lineVideo.SetActive(true);
-		//}
+		public void VideoPanel(){
+			DisablePanels();
+			PanelVideo.SetActive(true);
+			lineVideo.SetActive(true);
+		}
 
 		public void ControlsPanel(){
 			DisablePanels();
