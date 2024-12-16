@@ -59,8 +59,8 @@ namespace SlimUI.ModernMenu{
 		public void  Start (){
 			// check difficulty
 			if(PlayerPrefs.GetInt("NormalDifficulty") == 1){
-				difficultynormaltextLINE.gameObject.SetActive(true);
-				difficultyhardcoretextLINE.gameObject.SetActive(false);
+				//difficultynormaltextLINE.gameObject.SetActive(true);
+				//difficultyhardcoretextLINE.gameObject.SetActive(false);
 			}
 			else
 			{
@@ -76,10 +76,10 @@ namespace SlimUI.ModernMenu{
 
 			// check full screen
 			if(Screen.fullScreen == true){
-				fullscreentext.GetComponent<TMP_Text>().text = "on";
+				//fullscreentext.GetComponent<TMP_Text>().text = "on";
 			}
 			else if(Screen.fullScreen == false){
-				fullscreentext.GetComponent<TMP_Text>().text = "off";
+				//fullscreentext.GetComponent<TMP_Text>().text = "off";
 			}
 
 			// check hud value
@@ -236,7 +236,7 @@ namespace SlimUI.ModernMenu{
 		}
 
 		// the playerprefs variable that is checked to enable hud while in game
-		public void ShowHUD (){
+	public void ShowHUD (){
 			if(PlayerPrefs.GetInt("ShowHUD")==0){
 				PlayerPrefs.SetInt("ShowHUD",1);
 				showhudtext.GetComponent<TMP_Text>().text = "on";
